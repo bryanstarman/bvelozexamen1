@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bvelozexamen1.Vistas.Principal"
+             Title="Principal">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+x:Name="lblUsuario"
+VerticalOptions="Center" 
+HorizontalOptions="Center" 
+TextColor="Blue"/>
+        <Picker x:Name="pkCiudades" Title="Ciudades">
+            <Picker.Items>
+                <x:String>Quito</x:String>
+                <x:String>Cuenca</x:String>
+                <x:String>Guayaquilx</x:String>
+
+            </Picker.Items>
+        </Picker>
+        <Button x:Name="btnPK" Text="Ver el Elemento" Clicked="btnPK_Clicked"></Button>
+        <Label x:Name="lblDato" FontSize="18"></Label>
+        <DatePicker x:Name="dpFecha" Date="08/04/2024" Format="dd/MM/yyyy"></DatePicker>
+        <Button x:Name="bntFecha" Text="Fecha" Clicked="bntfecha_Clicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>
